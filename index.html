@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <i class="fab fa-spotify"></i>
+          <span>Spotify</span>
+        </div>
+        <ul class="nav">
+          <li class="active"><i class="fas fa-home"></i> Home</li>
+          <li><i class="fas fa-search"></i> Search</li>
+          <li><i class="fas fa-book"></i> Your Library</li>
+        </ul>
+        <ul class="playlists">
+          <li><i class="fas fa-plus-square"></i> Create Playlist</li>
+          <li><i class="fas fa-heart"></i> Liked Songs</li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="user-playlists">
+          <li>My Playlist #1</li>
+          <li>My Playlist #2</li>
+          <li>Workout Mix</li>
+          <li>Chill Vibes</li>
+          <li>Road Trip</li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="header">
+          <div class="navigation">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Search for songs, artists, or albums"
+            />
+          </div>
+          <div class="user">
+            <span>Username</span>
+            <div class="avatar">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h1>Good afternoon</h1>
+          <!-- In the playlist-grid section, replace with: -->
+          <div class="playlist-grid">
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/likedsongs.jpg')"
+            >
+              Liked Songs
+            </div>
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/discoverweekly.jpg')"
+            ></div>
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/dailymix1.jpg')"
+            ></div>
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/dailymix2.jpg')"
+            ></div>
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/dailymix3.jpg')"
+            ></div>
+            <div
+              class="playlist-card"
+              style="background-image: url('assets/images/dailymix4.jpg')"
+            ></div>
+          </div>
+
+          <h2>Recently played</h2>
+          <div class="recently-played">
+            <div class="song-card">
+              <div class="cover">
+                <img src="assets/images/album1.jpg" alt="Album Cover" />
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+              </div>
+              <h3>Zamaana Lage</h3>
+              <p>Arijit Singh</p>
+            </div>
+            <div class="song-card">
+              <div class="cover">
+                <img src="assets/images/album2.jpg" alt="Album Cover" />
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+              </div>
+              <h3>Laal Pari</h3>
+              <p>Yo Yo Honey Singh</p>
+            </div>
+            <div class="song-card">
+              <div class="cover">
+                <img src="assets/images/album3.jpg" alt="Album Cover" />
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+              </div>
+              <h3>Ilzaam</h3>
+              <p>Vishal Mishra</p>
+            </div>
+            <div class="song-card">
+              <div class="cover">
+                <img src="assets/images/album4.jpg" alt="Album Cover" />
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+              </div>
+              <h3>Chor Bazari Phir Se</h3>
+              <p>Neeraj Shridhar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player -->
+      <div class="player">
+        <div class="song-info">
+          <img src="assets/images/album1.jpg" alt="Album Cover" />
+          <div class="song-details">
+            <h4>Song Title</h4>
+            <p>Artist Name</p>
+          </div>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="player-controls">
+          <div class="controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <button class="play-pause"><i class="fas fa-pause"></i></button>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="progress-bar">
+            <span>0:00</span>
+            <div class="progress">
+              <div class="progress-fill"></div>
+            </div>
+            <span>3:45</span>
+          </div>
+        </div>
+        <div class="player-options">
+          <i class="fas fa-list-ul"></i>
+          <i class="fas fa-laptop"></i>
+          <div class="volume">
+            <i class="fas fa-volume-up"></i>
+            <div class="volume-bar">
+              <div class="volume-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
