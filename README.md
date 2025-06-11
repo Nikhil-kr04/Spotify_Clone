@@ -101,11 +101,11 @@ To change playlist covers:
 
 Replace the images in assets/images/ with your own:
 
-liked-songs.jpg
+likedsongs.jpg
 
-discover-weekly.jpg
+discoverweekly.jpg
 
-daily-mix1.jpg to daily-mix4.jpg
+dailymix1.jpg to dailymix4.jpg
 
 Contributing
 Contributions are welcome! Please follow these steps:
